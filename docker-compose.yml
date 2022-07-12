@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  cypress:
+    image: "cypress/included:9.7.0"
+    command: --browser chrome
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
